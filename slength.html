@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slength</title>
+    <script type="text/javascript">
+        function slength() {
+            var a = document.mystring.first.value;
+            var length = 0;
+            for (var i = 0; i < a.length; i++) {
+                length++;
+            }
+            document.mystring.total.value = length;
+        }
+    </script>
+</head>
+<body>
+    <form name="mystring">
+        Enter string:<input type="text" name="first">
+        <input type="button" value="length" onclick="javascript:slength();">
+        Get Result: <input type="text" name="total">
+    </form>
+</body>
+</html>
+
